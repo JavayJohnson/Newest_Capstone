@@ -12,9 +12,9 @@ app.use(express.json());
 app.use(cors());
 
 // Import routes
-const notesRoutes = require('./routes/notesRoutes');
+const bookR = require('./routes/bookR');
 
-app.use('/api/notes', notesRoutes);
+app.use('/api/books', bookR);
 
 const PORT = process.env.PORT || 5000;
 
@@ -22,4 +22,4 @@ const PORT = process.env.PORT || 5000;
 
 console.log(process.env.DB_URL)
 
-app.listen(PORT,()=>{console.log('Connected to Server')}) 
+app.listen(PORT,()=>{console.log(`Connected to Server ${PORT}`)}) 
