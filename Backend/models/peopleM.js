@@ -1,10 +1,15 @@
-const People = require('./models/peopleM');
+const mongoose= require('mongoose');
+const Schema= mongoose.Schema;
 
 // Create a new person
-const newPerson = new People({
-  firstName: 'John',
-  lastName: 'Doe',
-  dob: '1990'
+const peopleSchema= new Schema({
+  firstName: String,
+  lastName: String,
+  dob: String,
 });
 
-module.exports = mongoose.model("Person", peopleSchema)
+module.exports = mongoose.model("Person", peopleSchema);
+
+
+
+

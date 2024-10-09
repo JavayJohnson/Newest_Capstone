@@ -11,7 +11,7 @@ const getBooks = async (req, res) => {
 };
 const getBook = async (req, res) => {
   try {
-    const book = await Book.findByID();
+    const book = await Book.findById(req.params.id);
     res.status(200).json(book);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -38,7 +38,10 @@ const updateBook = async (req, res) => {
       title: title,
       author: author,
       published: published,
-    });
+    },
+  {
+    new:true
+  });
     res.json({ updatedBook: updatedBook });
   } catch (error) {
     res.status(500).json({ message: error.message });

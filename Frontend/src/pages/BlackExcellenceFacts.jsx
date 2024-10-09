@@ -4,6 +4,9 @@ const BlackExcellenceFacts = () => {
   const [fact, setFact] = useState('');
 
 
+  
+
+// fix with API Key
   const fetchRandomFact = async () => {
     const response = await fetch('https://blackhistoryapi.com/random-fact');
     const data = await response.json();

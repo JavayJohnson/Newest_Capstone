@@ -12,14 +12,35 @@ import './App.css';  // Import the styles for App
 
 function App() {
   const [notes, setNotes] = useState([]);
+  const [books, setBooks] = useState([]);
+  const [people, setPeople] = useState([]);
 
   // Fetch notes from the backend API when the component is mounted
   useEffect(() => {
-    fetch('/api/notes')
+    fetch('http://localhost:5000/api/notes')
       .then((res) => res.json())
       .then((data) => setNotes(data))
       .catch((error) => console.error('Error fetching notes:', error));
   }, []);
+
+  // Fetch notes from the backend API when the component is mounted
+  useEffect(() => {
+    fetch('http://localhost:5000/api/notes')
+      .then((res) => res.json())
+      .then((data) => setNotes(data))
+      .catch((error) => console.error('Error fetching notes:', error));
+  }, []);
+
+    // Fetch notes from the backend API when the component is mounted
+    useEffect(() => {
+      fetch('http://localhost:5000/api/notes')
+        .then((res) => res.json())
+        .then((data) => setNotes(data))
+        .catch((error) => console.error('Error fetching notes:', error));
+    }, []);
+
+
+
 
   return (
     <Router>
@@ -52,6 +73,20 @@ function App() {
               {notes.map((note) => (
                 <li key={note._id}>{note.title}</li>
               ))}
+
+<h1>Notes</h1>
+            <ul>
+              {notes.map((note) => (
+                <li key={note._id}>{note.title}</li>
+              ))}
+
+
+<h1>Notes</h1>
+            <ul>
+              {notes.map((note) => (
+                <li key={note._id}>{note.title}</li>
+              ))}
+
             </ul>
           </section>
         </main>
