@@ -8,6 +8,7 @@ const Schema = mongoose.Schema;
 const noteSchema = new Schema({
   title: String,
   content: String,
+  year: String,
 });
 
 // Export Note model

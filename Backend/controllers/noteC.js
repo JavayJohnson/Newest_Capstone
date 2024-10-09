@@ -34,11 +34,12 @@ const createNote = async (req, res) => {
 // Update a note
 const updateNote = async (req, res) => {
   const noteID = req.params.id;
-  const { title, content } = req.body; // Assuming note has title and content
+  const { title, content, year } = req.body; // Assuming note has title and content
   try {
     const updatedNote = await Note.findByIdAndUpdate(noteID, {
       title,
       content,
+      year,
     });
     res.json({ updatedNote });
   } catch (error) {

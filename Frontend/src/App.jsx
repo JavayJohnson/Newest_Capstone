@@ -14,6 +14,7 @@ function App() {
   const [notes, setNotes] = useState([]);
   const [books, setBooks] = useState([]);
   const [people, setPeople] = useState([]);
+}
 
   // Fetch notes from the backend API when the component is mounted
   useEffect(() => {
@@ -25,18 +26,18 @@ function App() {
 
   // Fetch notes from the backend API when the component is mounted
   useEffect(() => {
-    fetch('http://localhost:5000/api/notes')
+    fetch('http://localhost:5000/api/people')
       .then((res) => res.json())
-      .then((data) => setNotes(data))
-      .catch((error) => console.error('Error fetching notes:', error));
+      .then((data) => setPeople(data))
+      .catch((error) => console.error('Error fetching people:', error));
   }, []);
 
     // Fetch notes from the backend API when the component is mounted
     useEffect(() => {
-      fetch('http://localhost:5000/api/notes')
+      fetch('http://localhost:5000/api/books')
         .then((res) => res.json())
-        .then((data) => setNotes(data))
-        .catch((error) => console.error('Error fetching notes:', error));
+        .then((data) => setBooks(data))
+        .catch((error) => console.error('Error fetching books:', error));
     }, []);
 
 
@@ -67,6 +68,7 @@ function App() {
           </Routes>
 
           {/* Display fetched notes */}
+  
           <section>
             <h1>Notes</h1>
             <ul>
@@ -74,17 +76,16 @@ function App() {
                 <li key={note._id}>{note.title}</li>
               ))}
 
-<h1>Notes</h1>
+            <h1>Books</h1>
             <ul>
-              {notes.map((note) => (
-                <li key={note._id}>{note.title}</li>
+              {books.map((book) => (
+                <li key={book._id}>{book.title}</li>
               ))}
 
-
-<h1>Notes</h1>
+            <h1>People</h1>
             <ul>
-              {notes.map((note) => (
-                <li key={note._id}>{note.title}</li>
+              {people.map((people) => (
+                <li key={people._id}>{people.title}</li>
               ))}
 
             </ul>

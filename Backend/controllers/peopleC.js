@@ -10,7 +10,7 @@ const getPeople = async (req, res) => {
   }
 };
 
-// Get one People
+// Get one Person
 const getPerson = async (req, res) => {
   try {
     const person = await People.findById(req.params.id);
@@ -20,7 +20,7 @@ const getPerson = async (req, res) => {
   }
 };
 
-// Create a new People
+// Create a new Person
 const createPerson = async (req, res) => {
   const newPerson = new People(req.body);
   try {
@@ -31,15 +31,16 @@ const createPerson = async (req, res) => {
   }
 };
 
-// Update a People
+// Update a Person
 const updatePerson = async (req, res) => {
   const personId = req.params.id;
-  const { firstName, lastName, dob } = req.body;
+  const { firstName, lastName, dob, invention } = req.body;
   try {
     const updatedPerson = await People.findByIdAndUpdate(personId, {
       firstName,
       lastName,
       dob,
+      invention
     });
     res.json({ updatedPerson });
   } catch (error) {
@@ -47,7 +48,7 @@ const updatePerson = async (req, res) => {
   }
 };
 
-// Delete a People
+// Delete a PersonPeople
 const deletePerson = async (req, res) => {
   const personId = req.params.id;
   try {

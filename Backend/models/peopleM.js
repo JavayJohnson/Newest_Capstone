@@ -6,6 +6,7 @@ const peopleSchema= new Schema({
   firstName: String,
   lastName: String,
   dob: String,
+  invention: String,
 });
 
 module.exports = mongoose.model("Person", peopleSchema);
