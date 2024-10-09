@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <header>
       <h1>Black Excellence Infinitely Defined</h1>
+      <h4>When you know that you are preceded by greatness, you know that you can proceed with greatness! -Javay Johnson 2024</h4>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>

@@ -1,21 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BlackExcellenceQuiz = () => {
-  return (
-    <div>
-      <h1>Black Excellence Quiz</h1>
-      <p>Test your knowledge of Black inventors and their contributions!</p>
-      {/* Your quiz component goes here */}
-    </div>
-  );
-};
-
-
-
-// May have to adjust these two sections above and below the top code is for the new pages, the bottom code is from the old code from quiz.Jsx
-
-
-function Quiz() {
   const [score, setScore] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -87,15 +72,17 @@ function Quiz() {
   };
 
   return (
-    <div id="quiz">
-      <h2>Black Excellence Quiz</h2>
+    <div>
+      <h1>Black Excellence Quiz</h1>
+      <p>Test your knowledge of Black inventors and their contributions!</p>
+
       {showScore ? (
         <div>
           <p>Your final score: {score}/{questions.length}</p>
         </div>
       ) : (
-        <div>
-          <p>{questions[questionIndex].question}</p>
+        <div id="quiz">
+          <h2>{questions[questionIndex].question}</h2>
           <div className="quiz-buttons">
             {questions[questionIndex].options.map((option, index) => (
               <button key={index} onClick={() => handleAnswer(option)}>
@@ -107,6 +94,6 @@ function Quiz() {
       )}
     </div>
   );
-}
+};
 
 export default BlackExcellenceQuiz;

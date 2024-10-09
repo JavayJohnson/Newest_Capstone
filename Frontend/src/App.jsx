@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import BlackExcellenceFacts from './pages/BlackExcellenceFacts';
-import BlackExcellenceTimeline from './pages/BlackExcellenceTimeline';
-import BlackExcellenceQuiz from './pages/BlackExcellenceQuiz';
-import BlackExcellenceBlog from './pages/BlackExcellenceBlog';
+import Home from './components/Home';
+import BlackExcellenceFacts from './components/BlackExcellenceFacts';
+import BlackExcellenceTimeline from './components/BlackExcellenceTimeline';
+import BlackExcellenceQuiz from './components/BlackExcellenceQuiz';
+import BlackExcellenceBlog from './components/BlackExcellenceBlog';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Carousel from './pages/Carousel'; 
+import Carousel from './components/Carousel'; 
 import './App.css';  // Import the styles for App
 
 function App() {
   const [notes, setNotes] = useState([]);
   const [books, setBooks] = useState([]);
   const [people, setPeople] = useState([]);
-}
 
   // Fetch notes from the backend API when the component is mounted
   useEffect(() => {
@@ -24,7 +23,7 @@ function App() {
       .catch((error) => console.error('Error fetching notes:', error));
   }, []);
 
-  // Fetch notes from the backend API when the component is mounted
+  // Fetch people from the backend API when the component is mounted
   useEffect(() => {
     fetch('http://localhost:5000/api/people')
       .then((res) => res.json())
@@ -32,19 +31,16 @@ function App() {
       .catch((error) => console.error('Error fetching people:', error));
   }, []);
 
-    // Fetch notes from the backend API when the component is mounted
-    useEffect(() => {
-      fetch('http://localhost:5000/api/books')
-        .then((res) => res.json())
-        .then((data) => setBooks(data))
-        .catch((error) => console.error('Error fetching books:', error));
-    }, []);
-
-
-
+  // Fetch books from the backend API when the component is mounted
+  useEffect(() => {
+    fetch('http://localhost:5000/api/books')
+      .then((res) => res.json())
+      .then((data) => setBooks(data))
+      .catch((error) => console.error('Error fetching books:', error));
+  }, []);
 
   return (
-    <Router>
+    <Router> 
       <div>
         <Header />
         <nav>
@@ -68,28 +64,10 @@ function App() {
           </Routes>
 
           {/* Display fetched notes */}
-  
-          <section>
-            <h1>Notes</h1>
-            <ul>
-              {notes.map((note) => (
-                <li key={note._id}>{note.title}</li>
-              ))}
-
-            <h1>Books</h1>
-            <ul>
-              {books.map((book) => (
-                <li key={book._id}>{book.title}</li>
-              ))}
-
-            <h1>People</h1>
-            <ul>
-              {people.map((people) => (
-                <li key={people._id}>{people.title}</li>
-              ))}
-
-            </ul>
-          </section>
+          
+          
+           
+      
         </main>
         <Footer />
       </div>
