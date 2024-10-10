@@ -1,71 +1,48 @@
-/* General Timeline Container Styling */
-.timeline-container {
-  background-color: #000000; /* Black background for a sleek look */
-  color: #FFFFFF; /* White text for contrast */
+/* Timeline-Specific Styling */
+#timeline {
   padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.3); /* Futuristic glowing effect */
+  max-width: 1200px;
   margin: 40px auto;
-  max-width: 900px; /* Max width for readability */
-  text-align: center;
+  text-align: left;
+  background-color: #121212; /* Dark background for container */
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4); /* Green shadow */
 }
 
-/* Title Styling */
-h1 {
-  color: #00FF00; /* Neon green title */
-  font-size: 2.8rem;
-  margin-bottom: 30px;
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Glow effect */
-  letter-spacing: 2px;
-}
-
-/* Timeline List Styling */
-.timeline-list {
+/* #timeline ul {
   list-style: none;
   padding-left: 0;
-  text-align: left; /* Aligns the list to the left */
-  margin-bottom: 40px;
-}
+} */
 
-.timeline-list li {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-left: 5px solid #FF0000; /* Red bar to signify timeline */
-  background-color: #1a1a1a; /* Slightly lighter black for list items */
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5); /* Glowing shadow effect */
-  transition: transform 0.3s ease;
-}
-
-.timeline-list li:hover {
-  transform: scale(1.03); /* Subtle zoom on hover */
-  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7); /* Enhance glow on hover */
-}
-
-.timeline-list .year {
-  color: #00FF00; /* Neon green for years */
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin-right: 15px;
-}
-
-/* Highlight for important entries */
-.timeline-highlight {
-  background-color: #121212; /* Darker background for highlighted entries */
-  border-left: 5px solid #00FF00; /* Green bar for special events */
-}
-
-/* Footer Styling */
-footer {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 2px solid #FF0000; /* Red border at the top of the footer */
+#timeline li {
+  background-color: #1C1C1C;
   color: #FFFFFF;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #FF0000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-footer p {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: #888; /* Slightly lighter gray */
+#timeline li:nth-child(odd) {
+  background-color: #1F1F1F;
+}
+
+#timeline li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
+}
+
+#timeline .year {
+  font-size: 1.5rem;
+  color: #00FF00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#timeline .description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #FFFFFF;
 }

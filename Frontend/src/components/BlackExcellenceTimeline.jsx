@@ -6,12 +6,9 @@ const BlackExcellenceTimeline = () => {
   return (
     <div id="timeline" style={{ backgroundColor: '#000000', color: '#FFFFFF', padding: '30px', borderRadius: '15px', boxShadow: '0 10px 30px rgba(0, 255, 0, 0.5)', maxWidth: '800px', margin: '0 auto', textAlign: 'left' }}>
     <h2 style={{ color: '#00FF00', fontSize: '2.5rem', marginBottom: '20px', textShadow: '0 0 10px rgba(0, 255, 0, 0.7)' }}>
-      Black Inventions and Patents in America
+      Black Excellence that Changed the World
     </h2>
     <ul style={{ listStyle: 'none', paddingLeft: '0' }}>
-      <li style={{ marginBottom: '20px', padding: '20px', backgroundColor: '#1a1a1a', borderRadius: '10px', borderLeft: '5px solid #FF0000', boxShadow: '0 4px 10px rgba(255, 0, 0, 0.5)' }}>
-        1996 - The Late Honorable Rosa L. Parks, known as the mother of the civil rights movement, received a heartfelt "Thank you" from Javay Johnson. Rosa Parks led the Montgomery, Alabama bus boycott in 1955. I had the profoundly monumental privilege and the unforgettable experience of briefly sitting with a courageous Black woman of excellence, who carried the civil rights movement on her shoulders. Her spark, unbridled tenacity, and bravery became a major catalyst in the push for civil rights and the advancement of equality for people of color. In 1999, Parks was awarded the Congressional Gold Medal of Honor, the highest civilian honor in the United States. Rosa Parks, a historical icon who truly embodied Black Excellence, who is forever etched in history and infinitely defined by her courage and legacy.
-      </li>
       <li style={{ marginBottom: '20px', padding: '20px', backgroundColor: '#1a1a1a', borderRadius: '10px', borderLeft: '5px solid #FF0000', boxShadow: '0 4px 10px rgba(255, 0, 0, 0.5)' }}>
         1821 - Thomas L. Jennings receives the first patent for a dry cleaning process.
       </li>

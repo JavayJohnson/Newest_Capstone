@@ -1,24 +1,44 @@
-/* Facts Page Styling */
-#black-excellence-fact {
-  background-color: #121212;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
   color: #FFFFFF;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-  max-width: 800px;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #random-fact {
   text-align: center;
+  margin-top: 20px;
 }
 
 #random-fact h2 {
   font-size: 2rem;
-  color: #FF0000;
+  color: #00FF00; /* Bright green title */
+  margin-bottom: 10px;
 }
 
 #random-fact p {
   font-size: 1.5rem;
-  color: #b0bec5;
+  margin-bottom: 20px;
+}
+
+#random-fact button {
+  margin: 10px 0;
+  background-color: #00FF00; /* Green button */
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+#random-fact button:hover {
+  background-color: #FF0000; /* Red on hover */
+  color: #FFFFFF; /* White text on hover */
 }

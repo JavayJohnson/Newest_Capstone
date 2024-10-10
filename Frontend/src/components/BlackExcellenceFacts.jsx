@@ -16,18 +16,15 @@ const BlackExcellenceFacts = () => {
     try {
       const response = await fetch('https://rest.blackhistoryapi.io/fact/random', {
         headers: {
-          'x-api-key': 'SmF2YXlqb2huc29uU3VuIFNlcCAyOS'
+          'x-api-key': 'amZtc29sdXRpb25zVGh1IE9jdCAxMC' // Ensure this is the correct API key
         }
       });
       const data = await response.json();
-      setFact(data.fact);
+      setFact(data.Results[0].text); // Update the state with the fetched fact
     } catch (error) {
       console.error('Error fetching random fact:', error);
     }
-};
-
-
-
+  };
 
   useEffect(() => {
     fetchRandomFact();
@@ -54,7 +51,7 @@ const BlackExcellenceFacts = () => {
       {/* Random Fact Section */}
       <div id="random-fact">
         <h2>Black Excellence Facts</h2>
-        <p>{fact}</p>
+        <p>{fact}</p> {/* Display the fetched random fact */}
         <button onClick={fetchRandomFact}>Get Another Fact</button>
       </div>
 
