@@ -1,6 +1,5 @@
-/* Quiz Page Styling */
-/* Quiz Container */
-#quiz {
+
+/* #quiz {
   background-color: #121212;
   color: #f0f0f0;
   padding: 20px;
@@ -9,80 +8,56 @@
   margin: 20px auto;
   max-width: 600px;
   text-align: center;
-}
+} */
 
-/* Quiz Title */
+/* 
 #quiz h1 {
   font-size: 2.5rem;
   color: #00FF00;
-  text-shadow: 0 0 8px rgba(0, 255, 0, 0.7);
   margin-bottom: 20px;
-}
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+} */
 
-/* Question Container */
-#quiz .question-container {
-  background-color: #1C1C1C;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  border: 2px solid #FF0000;
-}
 
-/* Question Text */
-#quiz h2 {
-  font-size: 1.8rem;
-  color: #FF0000;
-  margin-bottom: 20px;
-}
-
-/* Quiz Button Container */
-#quiz .quiz-options {
+/* .question-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+  min-height: 150px; 
   display: flex;
   flex-direction: column;
-  gap: 15px;  /* Space between buttons */
-}
+  justify-content: flex-start; 
+  align-items: center;
+} */
 
-/* Individual Quiz Buttons */
-#quiz .quiz-options .option-button {
+
+/* .quiz-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  width: 100%; 
+} */
+
+
+/* .option-button {
   background-color: #00FF00;
   color: #000000;
-  padding: 15px;
-  border: none;
+  padding: 10px 20px;
+  border: 2px solid #FFFFFF;
   border-radius: 8px;
-  cursor: pointer;
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1;
   text-align: center;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  margin: 0; 
+} */
 
-#quiz .quiz-options .option-button:hover {
+/* .option-button:hover {
   background-color: #FF0000;
   color: #FFFFFF;
-}
-
-/* Extra Margin Below the Quiz */
-#quiz {
-  margin-bottom: 50px;
-}
-.option-button {
-  background-color: #00FF00;
-  color: #000000;
-  padding: 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.option-button:hover {
-  background-color: #FF0000;
-  color: #FFFFFF;
-} 
+  transform: scale(1.05);
+} */

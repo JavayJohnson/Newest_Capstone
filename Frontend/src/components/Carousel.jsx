@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import './Carousel.css'; 
+import './Carousel.css'; // Assuming the correct path for the CSS file
 
-function Carousel() {
+function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
     'image1.jpg', 
     'image2.jpg',
     'image3.jpg',
+    'image4.jpg',
     'image5.jpg',
     'image6.jpg',
     'image7.jpg',
@@ -28,8 +29,9 @@ function Carousel() {
     'image22.jpg',
   ];
 
+  const totalSlides = images.length;
+
   const showSlide = (index) => {
-    const totalSlides = images.length;
     if (index >= totalSlides) setCurrentIndex(0);
     else if (index < 0) setCurrentIndex(totalSlides - 1);
     else setCurrentIndex(index);
@@ -40,21 +42,38 @@ function Carousel() {
   };
 
   return (
-    <div className="carousel">
-      <div className="carousel-images">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Image ${index + 1}`}
-            className={index === currentIndex ? 'active' : ''}
-          />
-        ))}
+    <div>
+      {/* Carousel Section */}
+      <div className="carousel">
+        <div className="carousel-images" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={`/images/${image}`} /* Ensure images are in the public/images folder */
+              alt={`Image ${index + 1}`}
+              className="carousel-image"
+            />
+          ))}
+        </div>
+        <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
+        <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
       </div>
-      <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
-      <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
+
+      {/* Paragraph Section */}
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <p>
+          1996 - The Late Honorable Rosa L. Parks, known as the mother of the civil rights movement, 
+          received a heartfelt "Thank you" from Javay Johnson. Rosa Parks led the Montgomery, Alabama 
+          bus boycott in 1955. I had the profoundly monumental privilege and the unforgettable experience 
+          of briefly sitting with a courageous Black woman of excellence, who carried the civil rights movement 
+          on her shoulders. Her spark, unbridled tenacity, and bravery became a major catalyst in the push for civil 
+          rights and the advancement of equality for people of color. In 1999, Parks was awarded the Congressional Gold 
+          Medal of Honor, the highest civilian honor in the United States. Rosa Parks, a historical icon who truly embodied 
+          Black Excellence, who is forever etched in history and infinitely defined by her courage and legacy.
+        </p>
+      </div>
     </div>
   );
 }
 
-export default Carousel;
+export default Home;
