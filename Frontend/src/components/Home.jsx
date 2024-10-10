@@ -45,7 +45,7 @@ function Home() {
 
   return (
     <div>
-      {/* Carousel Section */}
+      
       <div className="carousel">
         <div className="carousel-images">
           {images.map((image, index) => (

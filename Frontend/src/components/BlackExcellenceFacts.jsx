@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'; 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './BlackExcellenceFacts.css'; // Importing the CSS file
+import './BlackExcellenceFacts.css';
 
-// The component name should be capitalized
+
 const BlackExcellenceFacts = () => {
   const [fact, setFact] = useState('');
   const [notes, setNotes] = useState([]);
@@ -11,16 +11,16 @@ const BlackExcellenceFacts = () => {
   const [activeCategory, setActiveCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Example async function to fetch a random fact
+  
   const fetchRandomFact = async () => { 
     try {
       const response = await fetch('https://rest.blackhistoryapi.io/fact/random', {
         headers: {
-          'x-api-key': 'amZtc29sdXRpb25zVGh1IE9jdCAxMC' // Ensure this is the correct API key
+          'x-api-key': 'amZtc29sdXRpb25zVGh1IE9jdCAxMC' 
         }
       });
       const data = await response.json();
-      setFact(data.Results[0].text); // Update the state with the fetched fact
+      setFact(data.Results[0].text); 
     } catch (error) {
       console.error('Error fetching random fact:', error);
     }
@@ -30,7 +30,7 @@ const BlackExcellenceFacts = () => {
     fetchRandomFact();
   }, []);
 
-  // Handle category selection and reset search term
+
   const handleCategoryClick = (category) => {
     setActiveCategory(activeCategory === category ? '' : category);
     setSearchTerm('');
@@ -48,14 +48,14 @@ const BlackExcellenceFacts = () => {
 
   return (
     <div id="black-excellence-fact">
-      {/* Random Fact Section */}
+      {}
       <div id="random-fact">
         <h2>Black Excellence Facts</h2>
-        <p>{fact}</p> {/* Display the fetched random fact */}
+        <p>{fact}</p> 
         <button onClick={fetchRandomFact}>Get Another Fact</button>
       </div>
 
-      {/* Categories with Searchable Dropdowns */}
+      
       <div>
         {/* Notes Section */}
         <h1 onClick={() => handleCategoryClick('notes')} style={{ cursor: 'pointer' }}>
@@ -143,5 +143,5 @@ const BlackExcellenceFacts = () => {
   );
 };
 
-// The export should match the component's name
+
 export default BlackExcellenceFacts;

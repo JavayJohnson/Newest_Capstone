@@ -1,6 +1,7 @@
 const Book = require('../models/bookM');
 
-// Get all Books
+
+// Get multiple books
 const getBooks = async (req, res) => {
   try {
     const books = await Book.find();
@@ -9,6 +10,8 @@ const getBooks = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+// Get 1 book
 const getBook = async (req, res) => {
   try {
     const book = await Book.findById(req.params.id);
@@ -28,6 +31,8 @@ const createBook = async (req, res) => {
     res.status(409).json({ message: error.message });
   }
 };
+
+// update a book
 const updateBook = async (req, res) => {
   const bookID = req.params.id;
   const published = req.body.published;
@@ -48,6 +53,7 @@ const updateBook = async (req, res) => {
   }
 };
 
+// Delete a book
 const deleteBook = async (req, res) => {
   const bookID = req.params.id;
   try {
@@ -57,7 +63,6 @@ const deleteBook = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-
 
 
 module.exports = { getBooks, getBook, createBook, updateBook, deleteBook };

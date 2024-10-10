@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './Header.css';  // If you have specific styles for the header
+// import './Header.css';  
 
 const Header = () => {
   return (

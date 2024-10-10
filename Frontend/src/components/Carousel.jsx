@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Carousel.css'; // Assuming the correct path for the CSS file
+import './Carousel.css'; 
 
 function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,13 +43,13 @@ function Home() {
 
   return (
     <div>
-      {/* Carousel Section */}
+      
       <div className="carousel">
         <div className="carousel-images" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, index) => (
             <img
               key={index}
-              src={`/images/${image}`} /* Ensure images are in the public/images folder */
+              src={`/images/${image}`} 
               alt={`Image ${index + 1}`}
               className="carousel-image"
             />
@@ -59,7 +59,6 @@ function Home() {
         <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
       </div>
 
-      {/* Paragraph Section */}
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         <p>
           1996 - The Late Honorable Rosa L. Parks, known as the mother of the civil rights movement, 

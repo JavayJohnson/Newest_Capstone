@@ -1,12 +1,12 @@
-/* Timeline-Specific Styling */
+
 #timeline {
   padding: 40px;
   max-width: 1200px;
   margin: 40px auto;
   text-align: left;
-  background-color: #121212; /* Dark background for container */
+  background-color: #121212; 
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4); /* Green shadow */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4); 
 }
 
 /* #timeline ul {

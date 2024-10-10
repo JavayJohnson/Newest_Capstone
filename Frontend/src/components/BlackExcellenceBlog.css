@@ -15,8 +15,8 @@
   padding: 15px;
   font-size: 18px;
   text-align: center;
-  background-color: #00FF00; /* Replace with your primary color */
-  color: #000000; /* Replace with your text color */
+  background-color: #00FF00; 
+  color: #000000; 
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -24,5 +24,5 @@
 }
 
 .blog-button:hover {
-  background-color: #FF0000; /* Replace with your hover color */
+  background-color: #FF0000; 
 }

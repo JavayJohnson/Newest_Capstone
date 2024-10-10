@@ -12,13 +12,13 @@
 .carousel-images img {
   width: 100%;
   height: auto;
-  display: none; /* Hide all images initially */
-  border-radius: 10px; /* Adds rounded corners to images */
+  display: none; 
+  border-radius: 10px; 
 }
 
 .carousel-images img.active {
-  display: block; /* Show the active image */
-  animation: fadeIn 1s ease-in-out; /* Adds a fade-in effect */
+  display: block; 
+  animation: fadeIn 1s ease-in-out; 
 }
 
 @keyframes fadeIn {
@@ -30,7 +30,7 @@
   }
 }
 
-/* Navigation Buttons */
+/* Nav */
 button {
 
   transform: translateY(-50%);
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(255, 0, 0, 0.7); /* Change background color on hover */
+  background-color: rgba(255, 0, 0, 0.7); 
 }
 
 .prev {

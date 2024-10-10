@@ -1,42 +1,41 @@
 /* index.css */
 
-/* General Body Styling */
 body {
-  background-color: #000000; /* Black background for all pages */
-  color: #FFFFFF; /* White text for all pages */
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header and Footer Styling */
 header, footer {
   background-color: #121212;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4); /* Green shadow */
-  border-bottom: 3px solid #FF0000; /* Red bottom border */
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4); 
+  border-bottom: 3px solid #FF0000; 
 }
 
 footer {
   padding: 30px;
-  border-top: 3px solid #FF0000; /* Red top border */
-  box-shadow: 0 -4px 8px rgba(0, 255, 0, 0.4); /* Green shadow for footer */
+  border-top: 3px solid #FF0000; 
+  box-shadow: 0 -4px 8px rgba(0, 255, 0, 0.4); 
+  
 }
 
 h1 {
-  color: #00FF00; /* Green for main titles */
+  color: #00FF00; 
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 0;
-  text-shadow: 0 0 8px rgba(0, 255, 0, 0.7); /* Glowing effect */
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.7); 
 }
 
-/* Button Styles */
+/* Buttons */
 button {
-  background-color: #00FF00; /* Green button */
+  background-color: #00FF00; 
   color: #000000;
   padding: 10px 20px;
   border: none;

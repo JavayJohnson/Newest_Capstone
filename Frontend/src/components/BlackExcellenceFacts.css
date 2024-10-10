@@ -17,7 +17,7 @@ body {
 
 #random-fact h2 {
   font-size: 2rem;
-  color: #00FF00; /* Bright green title */
+  color: #00FF00; 
   margin-bottom: 10px;
 }
 
@@ -28,7 +28,7 @@ body {
 
 #random-fact button {
   margin: 10px 0;
-  background-color: #00FF00; /* Green button */
+  background-color: #00FF00; 
   color: #000000;
   padding: 10px 20px;
   border: none;
@@ -39,6 +39,6 @@ body {
 }
 
 #random-fact button:hover {
-  background-color: #FF0000; /* Red on hover */
-  color: #FFFFFF; /* White text on hover */
+  background-color: #FF0000; 
+  color: #FFFFFF; 
 }
