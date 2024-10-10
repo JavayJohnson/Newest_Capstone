@@ -19,7 +19,6 @@ What do an ice cream scope, traffic light, electric microphone, portable air con
 They were all invented by Black people!
 
 Black Excellence Infinitely Defined is an interactive application built to educate and engage users with facts and key events from Black History. My app not only aims to educate but also to inspire, shedding light on the often-overlooked Black inventors and Patent holders. Dating back to the 1700's there are thousands of Black patent holders who have shaped and continue to shape modern life.
-
 Users can explore the incredible innovations and inventions by Black creators, including life-changing developments, like the color monitor, the gas mask, pencil sharpener, the wrench, to automatic elevator doors. Black inventors and patent holders have made profound and lasting contributions to everyday life, shaping the world we live in through their groundbreaking innovations.
 
 The app fetches data from the BlackHistoryAPI to provide users with historical facts. Additionally, my app features a quiz, a historical timeline of Black inventions, 3 search databases, and a blog page hosting multiple blogs  Black Excellence Infinitely Defined offers a meaningful, empowering educational experience that celebrates the contributions and enduring impact of Black individuals throughout history.
