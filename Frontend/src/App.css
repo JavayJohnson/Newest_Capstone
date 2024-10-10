@@ -1,179 +1,52 @@
-/* General Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000000; /* Dark background */
-  color: #FFFFFF; /* Light text */
+  background-color: #000000;
+  color: #FFFFFF;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
 header {
   background-color: #121212;
-  width: 100%;
   padding: 20px;
+  width: 100%;
   text-align: center;
-  border-bottom: 3px solid #FF0000; /* Red bottom border */
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4); /* Green shadow for header */
-  color: #FFF; /* White text for header */
-  text-transform: uppercase;
+  border-bottom: 3px solid #FF0000;
 }
 
-#quiz {
-  background-color: #121212; /* Dark background */
-  color: #f0f0f0; /* Light text color */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  margin: 20px auto;
-  max-width: 600px; /* Limit width for better readability */
-}
-
-
-#black-excellence-fact {
-  background-color: #121212; /* Dark background for a futuristic look */
-  color: #f0f0f0; /* Light text color for contrast */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-  max-width: 800px; /* Limit the width for better readability */
-  margin: auto; /* Center the content */
-}
-
-#random-fact {
-  margin-bottom: 30px;
-  text-align: center; /* Center align the fact section */
-}
-
-#random-fact h2 {
-  font-size: 2rem;
-  color: #e53935; /* Red for headings */
-  text-transform: uppercase;
-}
-
-#random-fact p {
-  font-size: 1.5rem;
-  color: #b0bec5; /* Lighter gray for the fact */
-  margin: 15px 0;
-  line-height: 1.6;
-}
-
-button {
-  background-color: #43a047; /* Green button color */
-  color: white; /* White text color */
-  border: none;
-  border-radius: 5px;
-  padding: 12px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  text-transform: uppercase;
-}
-
-button:hover {
-  background-color: #388e3c; /* Darker green on hover */
-  transform: scale(1.05); /* Scale effect on hover */
-}
-
-h1 {
-  font-size: 1.8rem;
-  color: #e53935; /* Red color for category titles */
-  cursor: pointer;
-  margin: 20px 0;
-  text-transform: uppercase; /* Uppercase for category titles */
-  transition: color 0.3s ease;
-  letter-spacing: 1.2px;
-}
-
-h1:hover {
-  color: #43a047; /* Green on hover */
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #e53935; /* Red border */
-  border-radius: 5px;
-  background-color: #1f1f1f; /* Dark background for input */
-  color: #f0f0f0; /* Light text for input */
-  transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-  border-color: #43a047; /* Green border on focus */
-  outline: none; /* Remove outline */
-}
-
-ul {
-  list-style-type: none; /* Remove default list styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
   padding: 0;
+  margin: 50px;
 }
 
-li {
-  padding: 10px;
-  background-color: #2c2c2c; /* Darker background for list items */
-  margin: 5px 0;
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: 2px solid #FFFFFF;
   border-radius: 5px;
-  transition: background-color 0.3s ease; /* Transition effect */
+  transition: background-color 0.3s;
 }
 
-li:hover {
-  background-color: #43a047; /* Green background on hover */
-  color: #f0f0f0; /* Change text color on hover */
-}
-
-main {
-  padding: 60px;
-  max-width: 1200px;
-  width: 100%;
-  text-align: center;
-}
-
-section {
-  margin-bottom: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+nav ul li a:hover {
+  background-color: #FF0000;
+  color: #FFFFFF;
 }
 
 footer {
   background-color: #121212;
-  color: #FFFFFF;
   padding: 60px;
-  width: 100%;
   text-align: center;
-  position: relative;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  body {
-    font-size: 90%;
-  }
-
-  main {
-    padding: 40px;
-  }
-
-  button {
-    font-size: 0.9rem;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  input[type="text"] {
-    padding: 8px;
-  }
+  width: 100%;
 }

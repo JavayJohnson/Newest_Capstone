@@ -1,0 +1,46 @@
+/* Timeline Page Styling */
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  
+  header {
+    background-color: #121212;
+    color: #FFFFFF;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #00FF00;
+    font-size: 3rem;
+  }
+  
+  #timeline {
+    padding: 40px;
+    text-align: left;
+  }
+  
+  #timeline ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #timeline li {
+    background-color: #121212;
+    color: #FFFFFF;
+    padding: 10px;
+    border-left: 5px solid #FF0000;
+    margin-bottom: 10px;
+  }
+  
+  #timeline li:nth-child(odd) {
+    background-color: #1C1C1C;
+  }
+  
+  footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+  }
+  

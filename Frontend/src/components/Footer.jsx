@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <p>© 2024 Black Excellence Infinitely Defined. All rights reserved.</p>
+      <p>© 2024 Black Excellence Infinitely Defined Javay Johnson, LLC All rights reserved.</p>
       <p>Powered by the BlackHistoryAPI</p>
     </footer>
   );
