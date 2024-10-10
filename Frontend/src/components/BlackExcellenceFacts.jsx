@@ -77,6 +77,28 @@ const BlackExcellenceFacts = () => {
           </div>
         )}
 
+{/* <div> */}
+  {/* Notes Section */}
+  {/* <h1 onClick={() => handleCategoryClick('notes')} style={{ cursor: 'pointer' }}>
+    Notes
+  </h1>
+  {activeCategory === 'notes' && (
+    <div style={{ position: 'relative' }}>
+      <input
+        type="text"
+        placeholder="Search Notes..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        style={{
+          padding: '10px',
+          width: '100%',
+          borderRadius: '5px',
+          border: '1px solid #ccc',
+          marginBottom: '10px',
+        }} */}
+      {/* /> */}
+
+
         {/* Books Section */}
         <h1 onClick={() => handleCategoryClick('books')} style={{ cursor: 'pointer' }}>
           Books
