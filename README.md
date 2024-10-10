@@ -9,14 +9,16 @@ Currently, two official plugins are available:
 
 README.md File for "Black Excellence Infinitely Defined"
 
-Black Excellence Infinitely Defined
-"Discover the untold stories of Black Excellence!"
+
 
 Project Overview:
 
 What do an ice cream scope, traffic light, electric microphone, portable air conditioner, potato chips, the first Home Camera Security System and the first cartridge video game console have in common?
 
 They were all invented by Black people!
+
+Black Excellence Infinitely Defined
+"Discover the untold stories of Black Excellence!"
 
 Black Excellence Infinitely Defined is an interactive application built to educate and engage users with facts and key events from Black History. My app not only aims to educate but also to inspire, shedding light on the often-overlooked Black inventors and Patent holders. Dating back to the 1700's there are thousands of Black patent holders who have shaped and continue to shape modern life.
 Users can explore the incredible innovations and inventions by Black creators, including life-changing developments, like the color monitor, the gas mask, pencil sharpener, the wrench, to automatic elevator doors. Black inventors and patent holders have made profound and lasting contributions to everyday life, shaping the world we live in through their groundbreaking innovations.
