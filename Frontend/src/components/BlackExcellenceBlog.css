@@ -1,38 +1,7 @@
 /* Blog Page Styling */
-body {
-    background-color: #000000; /* Black background */
-    color: #FFFFFF; /* White text */
-  }
-  
-  header, footer {
-    background-color: #121212;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4); /* Green shadow */
-  }
-  
-  h1 {
-    font-size: 3em;
-    color:  #00FF00; /* Green color for main titles */
-  }
-  
-  p {
+p {
     font-size: 1.2em;
     line-height: 1.6;
     color: #FFFFFF;
-  }
-  
-  a {
-    color: #00FF00; /* Green links */
-    transition: color 0.3s;
-  }
-  
-  a:hover {
-    color: #FF0000; /* Red hover effect */
-  }
-  
-  footer p {
-    margin: 0;
   }
   

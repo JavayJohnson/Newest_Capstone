@@ -15,15 +15,4 @@
     text-align: center;
   }
   
-  button {
-    background-color: #00FF00;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
-  
-  button:hover {
-    background-color: #FF0000;
-    color: #FFFFFF;
-  }
   
