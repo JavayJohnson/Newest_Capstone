@@ -1,7 +1,28 @@
-/* Blog Page Styling */
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #FFFFFF;
-  }
-  
+.center-text {
+  text-align: center;
+  margin: 20px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.blog-button {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #00FF00; /* Replace with your primary color */
+  color: #000000; /* Replace with your text color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.blog-button:hover {
+  background-color: #FF0000; /* Replace with your hover color */
+}

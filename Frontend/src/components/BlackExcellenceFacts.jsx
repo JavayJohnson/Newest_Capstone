@@ -12,15 +12,22 @@ const BlackExcellenceFacts = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   // Example async function to fetch a random fact
-  const fetchRandomFact = async () => {
+  const fetchRandomFact = async () => { 
     try {
-      const response = await fetch('https://rest.blackhistoryapi.io/fact/random');
+      const response = await fetch('https://rest.blackhistoryapi.io/fact/random', {
+        headers: {
+          'x-api-key': 'SmF2YXlqb2huc29uU3VuIFNlcCAyOS'
+        }
+      });
       const data = await response.json();
       setFact(data.fact);
     } catch (error) {
       console.error('Error fetching random fact:', error);
     }
-  };
+};
+
+
+
 
   useEffect(() => {
     fetchRandomFact();

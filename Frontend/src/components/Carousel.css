@@ -3,6 +3,7 @@
   position: relative;
   max-width: 600px;
   margin: auto;
+  padding: 75px;
   overflow: hidden;
   border-radius: 10px; /* Adds rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow */

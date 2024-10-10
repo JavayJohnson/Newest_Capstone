@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './BlackExcellenceQuiz.css';
 
 const BlackExcellenceQuiz = () => {
   const [score, setScore] = useState(0);
@@ -72,7 +73,7 @@ const BlackExcellenceQuiz = () => {
   };
 
   return (
-    <div>
+    <div id="quiz">
       <h1>Black Excellence Quiz</h1>
       <p>Test your knowledge of Black inventors and their contributions!</p>
 
@@ -81,11 +82,11 @@ const BlackExcellenceQuiz = () => {
           <p>Your final score: {score}/{questions.length}</p>
         </div>
       ) : (
-        <div id="quiz">
+        <div className="question-container">
           <h2>{questions[questionIndex].question}</h2>
-          <div className="quiz-buttons">
+          <div className="quiz-options">
             {questions[questionIndex].options.map((option, index) => (
-              <button key={index} onClick={() => handleAnswer(option)}>
+              <button key={index} className="option-button" onClick={() => handleAnswer(option)}>
                 {option}
               </button>
             ))}
