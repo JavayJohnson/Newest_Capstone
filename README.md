@@ -12,14 +12,13 @@ Black Excellence Infinitely Defined
 "Discover the untold stories of Black Excellence!"
 
 Project Overview:
-Black Excellence Defined is an interactive web application built to educate and engage users with random facts and key events from Black History. The app fetches data from the BlackHistoryAPI to provide users with fun facts, a quiz, and a historical timeline of Black culture and achievements.
+Black Excellence Infinitely Defined is an interactive web application built to educate and engage users with random facts and key events from Black History. The app fetches data from the BlackHistoryAPI to provide users with fun facts, a quiz, and a historical timeline of Black culture and achievements.
 
 Features:
 Random Facts: Get random, interesting Black History facts at the click of a button.
 Interactive Timeline: Explore key events in Black History in an engaging, scrollable format.
 Quiz: Test your knowledge with an interactive quiz based on real historical data.
-Local Storage: Save your favorite facts to revisit them anytime.
-Social Sharing: Share inspiring facts on social media to spread awareness.
+Database Search
 
 
 Technologies Used:
@@ -27,7 +26,6 @@ HTML5: For building the structure of the app.
 CSS3: To style the pages, ensuring a sleek, modern layout.
 JavaScript (ES6+): For functionality and interactivity.
 React: To build a dynamic user interface.
-Redux Toolkit: To manage state across the application.
 AJAX: For making requests to the BlackHistoryAPI to fetch data.
 
 
